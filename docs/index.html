@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Prompt Tray is a local Windows quick launcher for the text and files you reach for every day.">
+<meta name="theme-color" content="#f8f7fc">
+<title>Prompt Tray — Everyday text and files, one shortcut away</title>
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="demo.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav wrap">
+  <a class="brand" href="#"><img src="icon.png" alt="" width="35" height="35">Prompt Tray</a>
+  <nav aria-label="Main navigation"><a href="#workflow">How it works</a><a href="#download" class="nav-download">Get the beta <span aria-hidden="true">↗</span></a></nav>
+</header>
+<main id="main">
+  <section class="hero wrap" aria-labelledby="headline">
+    <div class="hero-copy">
+      <p class="platform"><span></span> Windows 10 &amp; 11</p>
+      <h1 id="headline">Keep your everyday <em>essentials</em> close.</h1>
+      <p class="intro">The text you reuse. The files you always need. Keep them in one searchable tray and grab them with a shortcut.</p>
+      <div class="hero-actions"><a class="button primary" href="#download">Get the Windows beta <span aria-hidden="true">↓</span></a><a class="text-link" href="#demo">Try the demo <span aria-hidden="true">↘</span></a></div>
+      <p class="fine">Local storage · No account</p>
+    </div>
+    <div class="hero-stage" id="demo">
+      <div class="stage-label">INTERACTIVE DEMO</div>
+      <div class="launcher">
+        <div class="launcher-title"><img src="icon.png" alt="" width="22" height="22"><strong>Prompt Tray</strong><span class="window-controls" aria-hidden="true">− &nbsp; □ &nbsp; ×</span></div>
+        <label class="search"><span class="magnifier" aria-hidden="true"></span><input id="search" type="search" placeholder="Search your items…" aria-label="Search sample items" autocomplete="off"></label>
+        <div class="results" id="results" aria-label="Sample items"></div>
+        <div class="launcher-actions"><button id="use-item" type="button">Copy text</button><span id="demo-status" role="status"></span><kbd>Enter</kbd></div>
+      </div>
+      <div class="shortcut"><kbd>Ctrl</kbd><span>+</span><kbd>Alt</kbd><span>+</span><kbd>P</kbd><span class="shortcut-label">Open Prompt Tray</span></div>
+    </div>
+  </section>
+  <section class="workflow wrap" id="workflow" aria-labelledby="workflow-title">
+    <div class="section-intro"><h2 id="workflow-title">From something useful to something reusable.</h2><p>Keep Prompt Tray in the notification area or show it on the taskbar for mouse access.</p></div>
+    <div class="steps">
+      <article><span class="step-mark" aria-hidden="true">↓</span><h3>Save it</h3><p>Drag in a file, image, or selection of text. Add an item by hand or turn on clipboard auto-save for new copies.</p></article>
+      <article><span class="step-mark" aria-hidden="true">⌕</span><h3>Find it</h3><p>Open the launcher with <kbd>Ctrl+Alt+P</kbd>. Search by text, filename, or category and navigate with the arrow keys.</p></article>
+      <article><span class="step-mark" aria-hidden="true">↗</span><h3>Use it</h3><p>Press Enter to copy text or open a file. Copy a file into Explorer, grab its path, or drag it straight into another app.</p></article>
+    </div>
+  </section>
+  <section class="details wrap" aria-labelledby="details-title">
+    <div><h2 id="details-title">Your library lives on your PC.</h2><p>Keep a link to a file where it is, or store a copy in Prompt Tray so it stays available if the original moves.</p></div>
+    <div class="questions">
+      <details><summary>Does it save everything I copy?</summary><p>Clipboard auto-save starts off. Switch it on from Options or the tray menu to capture new text, file links, and images. You can pause it at any time.</p></details>
+      <details><summary>Where are my items stored?</summary><p>Your library is stored under <code>%LOCALAPPDATA%\PromptTray</code>. File links point to their originals. Stored file copies and saved images live in the library’s Files folder.</p></details>
+    </div>
+  </section>
+  <section id="download" class="download wrap" aria-labelledby="download-title">
+    <div class="download-box"><img src="icon.png" alt="" width="62" height="62"><div><h2 id="download-title">Get Prompt Tray for Windows.</h2><p>Extract the ZIP and open <strong>PromptTray.exe</strong>. Windows 10 or 11 with .NET Framework 4.8.</p></div><a class="button primary" href="https://github.com/PTURNER744/prompt-tray/releases/download/v0.1.0/PromptTray-v0.1.0-windows.zip">Download beta ZIP <span aria-hidden="true">↓</span></a><p class="download-note">This beta is unsigned. Windows Smart App Control may block it from launching. <a href="https://github.com/PTURNER744/prompt-tray/releases">View releases on GitHub</a>.</p></div>
+  </section>
+</main>
+<footer class="site-footer wrap"><a class="brand" href="#"><img src="icon.png" alt="" width="27" height="27">Prompt Tray</a><a href="https://www.ironworkstechnology.com/">Built by Ironworks Technology</a></footer>
+</body>
+</html>
